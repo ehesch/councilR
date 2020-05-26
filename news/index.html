@@ -6,7 +6,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Council colors — colors • councilR</title>
+<title>Changelog • councilR</title>
 
 
 <!-- jquery -->
@@ -39,9 +39,7 @@
 
 
 
-<meta property="og:title" content="Council colors — colors" />
-<meta property="og:description" content="A named list of Council colors for each division, Metro Transit,
-Play Features, and MetroStats in Hex code format" />
+<meta property="og:title" content="Changelog" />
 
 
 
@@ -60,7 +58,7 @@ Play Features, and MetroStats in Hex code format" />
   </head>
 
   <body data-spy="scroll" data-target="#toc">
-    <div class="container template-reference-topic">
+    <div class="container template-news">
       <header>
       <div class="navbar navbar-default navbar-fixed-top" role="navigation">
   <div class="container">
@@ -107,69 +105,40 @@ Play Features, and MetroStats in Hex code format" />
 <div class="row">
   <div class="col-md-9 contents">
     <div class="page-header">
-    <h1>Council colors</h1>
-    
-    <div class="hidden name"><code>colors.Rd</code></div>
+      <h1 data-toc-skip>Changelog <small></small></h1>
+      
     </div>
 
-    <div class="ref-description">
-    <p>A named list of Council colors for each division, Metro Transit,
-Play Features, and MetroStats in Hex code format</p>
-    </div>
-
-    <pre class="usage"><span class='no'>colors</span></pre>
-
-
-    <h2 class="hasAnchor" id="format"><a class="anchor" href="#format"></a>Format</h2>
-
-    <p>A list of 29 character objects</p><dl>
-<dt>councilBlue</dt><dd><p>Council blue</p></dd>
-<dt>cdGreen</dt><dd><p>Community Development green</p></dd>
-<dt>mtsRed</dt><dd><p>Metropolitan Transportation Services red</p></dd>
-<dt>esBlue</dt><dd><p>Environmental Services blue</p></dd>
-<dt>transitBlue</dt><dd><p>Metro Transit blue</p></dd>
-<dt>transitRed</dt><dd><p>Metro Transit red</p></dd>
-<dt>transitYellow</dt><dd><p>Metro Transit yellow</p></dd>
-<dt>suppYellow</dt><dd><p>Supplementary yellow</p></dd>
-<dt>suppBlack</dt><dd><p>Supplmentary black</p></dd>
-<dt>suppGray</dt><dd><p>Supplementary gray</p></dd>
-<dt>suppWhite</dt><dd><p>Supplementary white</p></dd>
-<dt>metroGreen</dt><dd><p>Green Line green</p></dd>
-<dt>transitGold</dt><dd><p>Gold Line gold</p></dd>
-<dt>metroGray</dt><dd><p>Lettered line gray</p></dd>
-<dt>metroOrange</dt><dd><p>Orange Line orange</p></dd>
-<dt>playGreen</dt><dd><p>Play Features green, a slight variation on <code>cdGreen</code></p></dd>
-<dt>playBlue</dt><dd><p>Play Features blue, a slight variation on <code>councilBlue</code></p></dd>
-<dt>playLiBlue</dt><dd><p>Play Features light blue</p></dd>
-<dt>playDaBlue</dt><dd><p>Play Features dark blue</p></dd>
-<dt>playSalmon</dt><dd><p>Play Features salmon, or pink</p></dd>
-<dt>playYellow</dt><dd><p>Play Features yellow</p></dd>
-<dt>metrostatsBlue</dt><dd><p>Metro Stats blue</p></dd>
-<dt>metrostatsRed</dt><dd><p>Metro Stats red</p></dd>
-<dt>metrostatsDaPurple</dt><dd><p>Metro Stats dark purple</p></dd>
-<dt>metrostatsMePurple</dt><dd><p>Metro Stats medium purple</p></dd>
-<dt>metrostatsLiPurple</dt><dd><p>Metro Stats light purple</p></dd>
-<dt>metrostatsPink</dt><dd><p>Metro Stats pink</p></dd>
-<dt>metrostatsTan</dt><dd><p>Metro stats tan</p></dd>
-
-</dl>
-
-    <h2 class="hasAnchor" id="source"><a class="anchor" href="#source"></a>Source</h2>
-
-    <p><a href='https://www.metrotransit.org/Data/Sites/1/media/logos/brand_standards.pdf'>https://www.metrotransit.org/Data/Sites/1/media/logos/brand_standards.pdf</a></p>
-    <h2 class="hasAnchor" id="see-also"><a class="anchor" href="#see-also"></a>See also</h2>
-
-    <div class='dont-index'><p>Other aesthetics: 
-<code><a href='council_theme.html'>council_theme</a>()</code></p></div>
-
-    <h2 class="hasAnchor" id="examples"><a class="anchor" href="#examples"></a>Examples</h2>
-    <pre class="examples"><div class='input'><span class='no'>colors</span>$<span class='no'>councilBlue</span></div><div class='output co'>#&gt; [1] "#0054A4"</div></pre>
+    <div id="councilr-v010-beta1" class="section level1">
+<h1 class="page-header" data-toc-text="0.1.0">
+<a href="#councilr-v010-beta1" class="anchor"></a>councilR v0.1.0-beta.1</h1>
+<p>2020-05-26</p>
+<div id="new-functions" class="section level2">
+<h2 class="hasAnchor">
+<a href="#new-functions" class="anchor"></a>New functions</h2>
+<ul>
+<li>
+<code><a href="../reference/import_from_gis.html">import_from_gis()</a></code> function allows the user to import a shapefile from the Council’s ArcGIS catalog.</li>
+</ul>
+</div>
+<div id="housekeeping" class="section level2">
+<h2 class="hasAnchor">
+<a href="#housekeeping" class="anchor"></a>Housekeeping</h2>
+<ul>
+<li>Added a <code>NEWS.md</code> file to track changes to the package.<br>
+</li>
+<li>Updataed <a href="CODE_OF_CONDCT.html">Contributor Code of Conduct</a>.</li>
+</ul>
+</div>
+</div>
   </div>
+
   <div class="col-md-3 hidden-xs hidden-sm" id="pkgdown-sidebar">
     <nav id="toc" data-toggle="toc" class="sticky-top">
       <h2 data-toc-skip>Contents</h2>
     </nav>
   </div>
+
 </div>
 
 
