@@ -123,7 +123,7 @@ them. If you haven't previously installed snippets to RStudio, these
 snippets will mask some of the built-in snippets that ship with RStudio.</p>
     </div>
 
-    <pre class="usage"><span class='fu'>snippets_install</span>(<span class='kw'>install_path</span> <span class='kw'>=</span> <span class='kw'>NULL</span>, <span class='kw'>update</span> <span class='kw'>=</span> <span class='fl'>TRUE</span>)</pre>
+    <pre class="usage"><span class='fu'>snippets_install</span>(install_path = <span class='kw'>NULL</span>, update = <span class='fl'>TRUE</span>)</pre>
 
     <h2 class="hasAnchor" id="arguments"><a class="anchor" href="#arguments"></a>Arguments</h2>
     <table class="ref-arguments">
@@ -160,14 +160,19 @@ in place with <code>update = TRUE</code>. Or you can append the new snippets to 
 existing snippets files with <code>update = FALSE</code>. This option is desirable if
 you want to make sure that no snippets are overwritten. The newer snippets
 will mask older snippets, but no data will be lost.</p>
+    <h2 class="hasAnchor" id="author"><a class="anchor" href="#author"></a>Author</h2>
+
+    <p>Garrick Aden-Buie <a href='mailto:g.adenbuie@gmail.com'>g.adenbuie@gmail.com</a>,
+Liz Roten <a href='mailto:liz.roten@metc.state.mn.us'>liz.roten@metc.state.mn.us</a></p>
 
     <h2 class="hasAnchor" id="examples"><a class="anchor" href="#examples"></a>Examples</h2>
     <pre class="examples"><div class='input'>
-<span class='kw'>if</span> (<span class='fl'>FALSE</span>) {
-<span class='no'>snip_tmp</span> <span class='kw'>&lt;-</span> <span class='fu'><a href='https://rdrr.io/r/base/tempfile.html'>tempfile</a></span>(<span class='st'>"snippets"</span>)
-<span class='fu'><a href='https://rdrr.io/r/base/files2.html'>dir.create</a></span>(<span class='no'>snip_tmp</span>)
-<span class='fu'>snippets_install</span>(<span class='no'>snip_tmp</span>)
-}</div></pre>
+<span class='co'>if</span> (<span class='fl'>FALSE</span>) {
+<span class='kw'>snip_tmp</span> <span class='op'>&lt;-</span> <span class='fu'><a href='https://rdrr.io/r/base/tempfile.html'>tempfile</a></span>(<span class='st'>"snippets"</span>)
+<span class='fu'><a href='https://rdrr.io/r/base/files2.html'>dir.create</a></span>(<span class='kw'>snip_tmp</span>)
+<span class='fu'>snippets_install</span>(<span class='kw'>snip_tmp</span>)
+}
+</div></pre>
   </div>
   <div class="col-md-3 hidden-xs hidden-sm" id="pkgdown-sidebar">
     <nav id="toc" data-toggle="toc" class="sticky-top">
